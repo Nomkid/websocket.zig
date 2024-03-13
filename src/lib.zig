@@ -16,14 +16,14 @@ pub const is_test = builtin.is_test;
 pub const Reader = @import("reader.zig").Reader;
 
 pub const MessageType = enum {
-	text,
-	binary,
-	close,
-	ping,
-	pong,
+    text,
+    binary,
+    close,
+    ping,
+    pong,
 };
 
 pub const Message = struct {
-	type: MessageType,
-	data: []const u8,
+    type: MessageType,
+    data: []const u8,
 };
