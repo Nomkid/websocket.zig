@@ -319,7 +319,7 @@ More advanced methods are:
 * `writeFrame(websocket.OpCode, []u8) - Writes an arbitrary frame`. `OpCode` is an enum with possible values of: `text`, `binary`, `close`, `ping`, `pong`
 
 ### Pings, Pongs and Close
-By default, the client answers incoming `ping` messages with a corresponging `pong`. By default, when the client receives a `close` message, it calls `client.close() which replies with a `close` frame and closes the underlying socket.
+By default, the client answers incoming `ping` messages with a corresponging `pong`. By default, when the client receives a `close` message, it calls `client.close()`` which replies with a `close` frame and closes the underlying socket.
 
 When configured with `handle_ping` and/or `handle_pong` and/or `handle_close`, the messages are passed to the `handle` method and no automatic handling is done. 
 
